@@ -12,3 +12,7 @@ sui move build
 ```bash
 sui client publish --gas-budget 50000000
 ```
+5. Mint NFT
+```bash
+sui client call --package $ID_PACKAGE --module nft --function mint --args "First NFT" "Test mint an NFT on Sui" --gas-budget 50000000
+```
